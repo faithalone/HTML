@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WeatherPy Analysis</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom stylesheet CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+
+  <!-- Body of html -->
+
+  <body>
+    <!-- Create a Navigation bar for Latitude page-->
+    <nav id="navbar-Latitude" class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Latitude</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#max_temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="#humidity.html">Humidity</a>
+            <a class="dropdown-item" href="#cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="#wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#data.html">Data</a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- End navigation bar -->
+
+    <div class="container-fluid">
+    <!-- Add jumbotron -->
+
+
+    <!-- Creates the Overall Grid -->
+
+        <div class="row">
+
+          <!-- Row 2 -->
+          <div class="row">
+            <div class="left md-12 col-md-6">
+              <h1> Summary: Latitude vs. Max Temperature </h1>
+              <img id = "City Latitude vs. Max Temperature" src="Images/Latitude_Temperature.png" class="pull-left img-responsive img-rounded">
+
+              <p>The purpose of the project was to analyze how weather changes
+                 as you get closer to the equator. OpenWeatherMap API was used to assemble 
+                 our dataset of over 600 cities.</p>
+
+
+                <p> After assembling the dataset, we used Matplotlib to plot various
+                  aspects of the weather vs. latitude. The factors looked at included:
+                  temperature, cloudiness, wind speed, and humidity. This site Provides
+                  the source data and visualizations created as part of the analysis, as
+                  well as explanations and descriptions of any trends and correlations
+                  witnessed.</p>
+
+            </div>
+            <div class="col-md-12">
+              <h2> Visualization</h2>
+
+              <!-- thumbnail 1 -->
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class ="thumbnail">
+                    <img id = "City Latitude vs. Max Temperature" src="Images/Latitude_Temperature.png" class="pull-left img-responsive img-rounded">
+                </div>
+              </div>
+
+              <!-- thumbnail 2 -->
+              <div class="col-md-6 col-lg-6">
+                  <div class ="thumbnail">
+                    <img id = "City Latitude vs. Humidity" src="Images/Latitude_Humidity.png" class="pull-left img-responsive img-rounded">
+                  </div>
+              </div>
+
+              <!-- thumbnail 3 -->
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class ="thumbnail">
+                    <img id = "City Latitude vs. Wind Speed" src="Images/Latitude_WindSpeed.png" class="pull-left img-responsive img-rounded">
+                </div>
+              </div>
+
+              <!-- thumbnail 4 -->
+              <div class="col-md-6 col-lg-6">
+                  <div class ="thumbnail">
+                    <img id = "City Latitude vs. Cloudiness" src="Images/Latitude_Cloudiness.png" class="pull-left img-responsive img-rounded">
+                  </div>
+              </div>
+            
+            </div>
+
+            <div class="clearfix"></div>
+
+          </div>
+
+  </body>
+
+  <!-- Footer-->
+  <div class="container-fluid">
+          <footer style="background-color: lightgrey">
+                  <p>
+                      <medium>© Copyright 2018</br>
+                          Data Analytics and Visualization</medium>
+                  </p>
+              </footer>
+  </div>
+
+
+
+
+
+</html>
